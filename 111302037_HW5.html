@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Layout</title>
+  <style>
+    /* General Styles */
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .main-container {
+      display: flex;
+      width: 900px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    /* Left Panel */
+    .left-panel {
+      width: 330px;
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .profile-photo {
+      width: 100%;
+      height: 200px;
+      background-image: url('your-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+    .about-me {
+      margin-top: 20px;
+    }
+    .about-me h2,
+    .contact h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+    .about-me p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .contact {
+      margin-top: 20px;
+    }
+    .contact p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .school-logo img {
+      width: 100px;
+      align-self: center;
+    }
+
+    /* Right Panel */
+    .right-panel {
+      width: 570px;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 18px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+    }
+    .timeline-item .year {
+      font-weight: bold;
+    }
+    .homework-list a {
+      display: flex;
+      align-items: center;
+      color: #007bff;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    .homework-list a:hover {
+      text-decoration: underline;
+    }
+    .favorite-music {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .favorite-music a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+    .favorite-music img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+    .note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <!-- Profile Photo -->
+      <div class="profile-photo"></div>
+        <img src="361550174@2x.png">
+      <!-- About Me -->
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I am a junior in the Department of Money and Banking at National Chengchi University.
+          I am very interested in studying programming and computer science fundamentals. I have experience in 
+          writing HTML, R, and Python.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: 111302037@g.nccu.edu.tw</p>
+      </div>
+
+      <!-- School Logo -->
+      <div class="school-logo">
+        <img src="nccu-logo.png" alt="School Logo">
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+  <div class="right-panel">
+  <!-- Education -->
+  <div class="section education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="year">2023 - now</span>
+        <span>National Chengchi University, Department of Money and Banking</span>
+      </div>
+      <div class="timeline-item">
+        <span class="year">2021 - 2023</span>
+        <span>Taipei Dazhi Municipal High School</span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Homework List -->
+  <div class="section homework-list">
+    <h2>Homework List</h2>
+    <div class="homework-item">
+      <span>HW1 -</span> <a href="https://github.com/yyt-eva/HW1.git" target="_blank">https://github.com/yyt-eva/HW1.git</a>
+    </div>
+    <div class="homework-item">
+      <span>HW2 -</span> <a href="https://github.com/yyt-eva/HW2.git" target="_blank">https://github.com/yyt-eva/HW2.git</a>
+    </div>
+    <div class="homework-item">
+      <span>HW3 -</span> <a href="https://github.com/yyt-eva/HW3.git" target="_blank">https://github.com/yyt-eva/HW3.git</a>
+    </div>
+    <div class="homework-item">
+      <span>HW4 -</span> <a href="https://github.com/yyt-eva/HW4.git" target="_blank">https://github.com/yyt-eva/HW4.git</a>
+    </div>
+  </div>
+
+  <!-- Favorite Music -->
+  <div class="section favorite-music">
+    <h2>Favorite Music</h2>
+    <div class="music-item">
+      <a href="#"><img src="spotify-icon.png" alt="Music"><span>pov</span></a>
+      <a href="#"><img src="spotify-icon.png" alt="Music"><span>location</span></a>
+      <a href="#"><img src="spotify-icon.png" alt="Music"><span>21</span></a>
+      <a href="#"><img src="spotify-icon.png" alt="Music"><span>we can't be friends</span></a>
+    </div>
+    <p class="note">Note: These songs inspire me and help me focus on my studies.</p>
+  </div>
+</div>
+
+</body>
+</html>
